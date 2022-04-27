@@ -1,2 +1,2 @@
 # beholden
-My personal project. The name is not final
+My personal game project. The name is not final
