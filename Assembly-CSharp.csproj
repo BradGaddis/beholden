@@ -36,8 +36,11 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\PlayerController.cs" />
-     <Compile Include="Assets\PortalTransfer.cs" />
+     <Compile Include="Assets\Scripts\PortalTransfer.cs" />
+     <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\PlayerAnimationHandler.cs" />
+     <None Include="Assets\Artwork\Placeholders\Modern_Interiors_Free_v2.2\Modern tiles_Free\READ ME.txt" />
+     <None Include="Assets\Artwork\Placeholders\Modern_Interiors_Free_v2.2\Modern tiles_Free\LICENSE.txt" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
