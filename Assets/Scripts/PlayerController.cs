@@ -12,7 +12,7 @@ public enum PlayerState {
 
 public class PlayerController : MonoBehaviour
 {
-    PortalTransfer portalTransfer;
+    // PortalTransfer portalTransfer;
     [Header("The player's movement speed")]
     [SerializeField] float speed = 5f;
     [SerializeField] float dashTime = 3f;
@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        portalTransfer = GetComponent<PortalTransfer>();
+        // portalTransfer = GetComponent<PortalTransfer>();
         playerRb = GetComponent<Rigidbody2D>();
         playerAudio = GetComponent<AudioSource>();
         dashTimer = dashTime;
