@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Player
+namespace Player.Animations
 { 
        public class PlayerAnimationHandler : MonoBehaviour
     {
@@ -16,37 +16,43 @@ namespace Player
             animator = GetComponent<Animator>();
         }
 
+            float x, y, walk_x, walk_y;
         // Update is called once per frames
         void Update()
         {
-            HandleMovement();
+            HandleWalkingAnimations();
+            if(playerController.GetPlayerState() == PlayerState.dashing)
+            {
+                animator.SetBool("isDashing", true);
+                animator.SetFloat("dash_x", walk_x);
+                animator.SetFloat("dash_y", walk_y);
+            } else {
+                animator.SetBool("isDashing", false);
+            }
         }
 
-        private void HandleMovement()
+        private void HandleWalkingAnimations()
         {
             Vector3 direction = playerController.GetDirection();
-            float x, y, walk_x, walk_y;
 
-            WalkAnimations(direction, out x, out y, out walk_x, out walk_y);
-            SetIdle(x, y, walk_x, walk_y);
+            SetWalkAnimations(direction, out x, out y, out walk_x, out walk_y);
+            SetIdleAnimations(x, y, walk_x, walk_y);
         }
 
-        private void SetIdle(float x, float y, float walk_x, float walk_y)
+        private void SetIdleAnimations(float x, float y, float walk_x, float walk_y)
         {
-            if (x > 0 || x < 0)
+            if (x != 0)
             {
                 animator.SetFloat("idle_x", walk_x);
-
                 if (y == 0)
                 {
                     animator.SetFloat("idle_y", 0);
                 }
             }
 
-            if (y > 0 || y < 0)
+            if (y != 0)
             {
                 animator.SetFloat("idle_y", walk_y);
-
                 if (x == 0)
                 {
                     animator.SetFloat("idle_x", 0);
@@ -54,7 +60,7 @@ namespace Player
             }
         }
 
-        private void WalkAnimations(Vector3 direction, out float x, out float y, out float walk_x, out float walk_y)
+        private void SetWalkAnimations(Vector3 direction, out float x, out float y, out float walk_x, out float walk_y)
         {
             x = direction.x;
             y = direction.y;

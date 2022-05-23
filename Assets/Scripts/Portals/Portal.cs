@@ -7,7 +7,7 @@ public class Portal : MonoBehaviour
     [SerializeField] Vector3 rotateOffset = Vector3.zero;
     [SerializeField] float rotateSpeed = 0f;
     // Start is called before the first frame update
-    void Start()
+        void Start()
     {
         
     }

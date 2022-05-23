@@ -36,11 +36,11 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\PortalHandler.cs" />
-     <Compile Include="Assets\Scripts\PlayerAnimationHandler.cs" />
-     <Compile Include="Assets\Scripts\PlayerController.cs" />
-     <Compile Include="Assets\Scripts\Portal.cs" />
      <Compile Include="Assets\Scripts\DebugStuffs\PlaceholderAsset.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerAnimationHandler.cs" />
+     <Compile Include="Assets\Scripts\Portals\Portal.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\Portals\PortalHandler.cs" />
      <None Include="Assets\Artwork\Placeholders\Modern_Interiors_Free_v2.2\Modern tiles_Free\READ ME.txt" />
      <None Include="Assets\Artwork\Placeholders\Modern_Interiors_Free_v2.2\Modern tiles_Free\LICENSE.txt" />
     <Reference Include="UnityEngine">
@@ -698,6 +698,14 @@
     <ProjectReference Include="Unity.2D.IK.Runtime.csproj">
       <Project>{cafa125c-fe97-59fd-38ea-349ec34434d1}</Project>
       <Name>Unity.2D.IK.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Cinemachine.csproj">
+      <Project>{75289292-b6da-5fbb-51a5-ded89589c41b}</Project>
+      <Name>Cinemachine</Name>
+    </ProjectReference>
+    <ProjectReference Include="com.unity.cinemachine.editor.csproj">
+      <Project>{5a7419aa-48c3-ed7f-52bb-5f8e41953a99}</Project>
+      <Name>com.unity.cinemachine.editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Animation.Triangle.Runtime.csproj">
       <Project>{b16c3e80-1147-f197-a690-afdda5dcc2ac}</Project>

@@ -11,10 +11,11 @@ GameObject:
   - component: {fileID: 414159922501396032}
   - component: {fileID: 414159922501396035}
   - component: {fileID: 414159922501396038}
-  - component: {fileID: 414159922501396034}
   - component: {fileID: 414159922501396033}
   - component: {fileID: 414159922501396039}
   - component: {fileID: 414159922501396036}
+  - component: {fileID: 1710859780}
+  - component: {fileID: 1710859784}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -108,23 +109,6 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &414159922501396034
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 414159922501396061}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 096f2185a2d93994f9718cf0d41d7c28, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  dashTime: 1
-  dashDelay: 2
-  dashForce: 10
-  dashWoosh: {fileID: 8300000, guid: 8339fcff3bed7374b8f11f50974695f1, type: 3}
 --- !u!61 &414159922501396033
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -138,7 +122,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.016982675, y: -0.050947934}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -149,7 +133,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.5924163, y: 0.83017343}
   m_EdgeRadius: 0
 --- !u!82 &414159922501396039
 AudioSource:
@@ -266,3 +250,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1710859780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 414159922501396061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85b03ca849c038742aeab7818b5945ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  dashTime: 3
+  dashDelay: 2
+  dashForce: 100
+  dashWoosh: {fileID: 8300000, guid: fd1ce6b94bf69a94389ebb1bb92f7b01, type: 3}
+--- !u!114 &1710859784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 414159922501396061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca9d3a10fcdb42a45ba56d3dfee2bf4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

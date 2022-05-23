@@ -10,7 +10,7 @@ public enum PlayerState {
     jumping
 }
 
-namespace Player.controller
+namespace Player
 {
     public class PlayerController : MonoBehaviour
     {
@@ -28,6 +28,7 @@ namespace Player.controller
         bool canTeleport = false; 
         float dashTimer;
         Vector3 lockDashDir;
+        Vector3 currentDirection;
         Rigidbody2D playerRb;
         AudioSource playerAudio;
         PlayerState playerState = PlayerState.idle;
@@ -44,8 +45,8 @@ namespace Player.controller
         }
 
         void Update() {
-            // canTeleport = portalTransfer.readyToTeleport;
             Debug.Log("Player State: " + playerState);
+            Debug.Log("dash is locked: " + dashLocked);
         }    
         void FixedUpdate()
         {
@@ -56,15 +57,17 @@ namespace Player.controller
         // correct prevState issue so that it gets saved and reverted after dash 
         void HandleMovement()
         {
-            Vector3 direction = GetDirection() * Time.deltaTime;
+            Vector3 direction = GetDirection();
 
-            if (Input.GetKey(KeyCode.LeftShift) && !canTeleport && !dashLocked || (playerState == PlayerState.dashing && !dashLocked))
+            if (Input.GetKey(KeyCode.LeftShift) && !dashLocked && playerState == PlayerState.walking || playerState == PlayerState.dashing )
             {
                 Dash(direction);
             }
-            else
+            else if (direction.magnitude > 0)
             {
                 Walk(direction);
+            } else {
+                playerState = PlayerState.idle;
             }
         }
 
@@ -78,41 +81,38 @@ namespace Player.controller
             return direction;
         }
 
+        public PlayerState GetPlayerState(){
+            return playerState;
+        }
+
         private void Dash(Vector3 direction)
         {
-            // store the previous state
-            prevState = playerState;
-
-            // TODO: lockdir isn't getting recorded
             
-
             // make sure that the player is dashing now
             if (playerState != PlayerState.dashing)
             {
-                lockDashDir = direction;
+                // store the previous state
+                prevState = playerState;
                 playerState = PlayerState.dashing;
+                currentDirection = direction * dashForce;
+                lockDashDir = currentDirection;
                 playerAudio.PlayOneShot(dashWoosh);
             }
 
-            if(lockDashDir == Vector3.zero) 
-            {
-                // return to previous state;
-                playerState = prevState;
-                return; 
-            }
+
             
             if (dashTimer >= 0)
             {
-                Debug.Log(lockDashDir);
                 // if player tries to double dash, prevent it
-                if(Input.GetKeyDown(KeyCode.LeftShift))
-                {
-                    ExitDash();
-                }
+                // if(Input.GetKeyDown(KeyCode.LeftShift))
+                // {
+                //     ExitDash();
+                // }
                 
                 dashTimer -= Time.deltaTime;
                 Vector3 curPos = transform.position;
-                Vector3 newPos = curPos + lockDashDir;
+                Vector3 newPos = curPos + (lockDashDir * Time.deltaTime);
+                lockDashDir = currentDirection;
                 playerRb.MovePosition(newPos); 
             }
             else
@@ -141,7 +141,7 @@ namespace Player.controller
             prevState = playerState;
             // intended movement direction, corrected for frame rate and speed
 
-            Vector3 walkdirection = direction * speed;
+            Vector3 walkdirection = direction * speed * Time.deltaTime;
             // set walking player state
             if(walkdirection != Vector3.zero)
             {
