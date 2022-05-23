@@ -36,9 +36,11 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\PortalHandler.cs" />
      <Compile Include="Assets\Scripts\PlayerAnimationHandler.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
-     <Compile Include="Assets\Artwork\Tutorial\PortalHandler.cs" />
+     <Compile Include="Assets\Scripts\Portal.cs" />
+     <Compile Include="Assets\Scripts\DebugStuffs\PlaceholderAsset.cs" />
      <None Include="Assets\Artwork\Placeholders\Modern_Interiors_Free_v2.2\Modern tiles_Free\READ ME.txt" />
      <None Include="Assets\Artwork\Placeholders\Modern_Interiors_Free_v2.2\Modern tiles_Free\LICENSE.txt" />
     <Reference Include="UnityEngine">
