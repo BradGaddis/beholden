@@ -117,6 +117,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -844,6 +845,38 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      player base-Sheet_12: 263092524886203970
+      player base-Sheet_28: -8453942919590951510
+      player base-Sheet_15: 2689940839401026445
+      player base-Sheet_18: -2857857716264743726
+      player base-Sheet_7: 785225431916567373
+      player base-Sheet_30: 4636555997045776185
+      player base-Sheet_9: -6724601003678109479
+      player base-Sheet_17: -9132478037283142575
+      player base-Sheet_16: 9073433452877280707
+      player base-Sheet_29: 625447925379863602
+      player base-Sheet_13: -2062272529065845610
+      player base-Sheet_26: 4883359665022672828
+      player base-Sheet_0: 3029867817564109406
+      player base-Sheet_5: 3648904047529204996
+      player base-Sheet_11: 8949930302807883425
+      player base-Sheet_27: -9032771891713299309
+      player base-Sheet_22: 7714927831884470265
+      player base-Sheet_8: -6327161989962377496
+      player base-Sheet_3: 1672563901243004925
+      player base-Sheet_6: -2858483265880712297
+      player base-Sheet_14: 4410579788443381186
+      player base-Sheet_25: 8655683196612062208
+      player base-Sheet_23: -5211644490383107164
+      player base-Sheet_19: -1272260768513134835
+      player base-Sheet_21: 1344638668345369878
+      player base-Sheet_10: 2805622694282054219
+      player base-Sheet_20: -1690842575039295191
+      player base-Sheet_24: 3967313286594236952
+      player base-Sheet_4: 5869679891317738852
+      player base-Sheet_1: 5178231210773975007
+      player base-Sheet_2: -3603161489375687637
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

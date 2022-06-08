@@ -177,6 +177,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -1324,6 +1325,58 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      waterway_12: 1725118405381429647
+      waterway_17: -4590909599113025072
+      waterway_44: 3608324375306573751
+      waterway_19: -6242806175753018458
+      waterway_7: -3774896860412253638
+      waterway_10: 960120664247771426
+      waterway_28: -4687852116807561939
+      waterway_38: -8984407295154320445
+      waterway_6: 868984222387401817
+      waterway_0: 2414987378497780553
+      waterway_1: -1979421967388250085
+      waterway_18: -2896399372592227565
+      waterway_39: -8923072202455229412
+      waterway_42: 961379551387343076
+      waterway_5: -5557740774819829199
+      waterway_49: -8527052799429775291
+      waterway_25: 7010617397255885455
+      waterway_15: -6912746103947041666
+      waterway_27: 6850203491609880859
+      waterway_9: -8788263050004063150
+      waterway_24: -7889713475691556515
+      waterway_20: 9176967409648515668
+      waterway_40: -8007769940212272195
+      waterway_43: -538120784638042011
+      waterway_14: -755064538173875670
+      waterway_34: 6795818927422518704
+      waterway_23: -1483596433173670831
+      waterway_41: -5009691708039118753
+      waterway_21: -8331417969178770945
+      waterway_16: -9016370609793327000
+      waterway_2: 7934074011745612301
+      waterway_31: -961437100235834546
+      waterway_36: 6022611688579220627
+      waterway_48: -5410975674637009761
+      waterway_26: 4548350723129791063
+      waterway_50: -167485215290264615
+      waterway_11: 8519167133400933490
+      waterway_35: -6926570653284468606
+      waterway_29: 6681403795546774542
+      waterway_46: 3956930106759193527
+      waterway_45: 8830755144193879583
+      waterway_32: -2144806218026754312
+      waterway_47: 2186818170975425919
+      waterway_8: -3187656307790639090
+      waterway_33: 1283543007007964206
+      waterway_22: 9113766462457695244
+      waterway_37: -7008876676102751953
+      waterway_3: 5597746884671749787
+      waterway_4: 3639052588188837631
+      waterway_30: -7643777402612723389
+      waterway_13: -4214527750433600956
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -192,6 +192,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -1456,6 +1457,63 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      basic tileset template_20: -7265300776085169305
+      basic tileset template_55: 813238698437987679
+      basic tileset template_19: -3165788682118947961
+      basic tileset template_23: 8325984607793806736
+      basic tileset template_25: -7700854437624166430
+      basic tileset template_39: 7906303771962397622
+      basic tileset template_27: -5763205717941597901
+      basic tileset template_51: 2758866705313576792
+      basic tileset template_44: 4128515982874202846
+      basic tileset template_53: 7092246524958930654
+      basic tileset template_6: -8479053633533461012
+      basic tileset template_43: 6189778334494839807
+      basic tileset template_18: 2756374373612496491
+      basic tileset template_50: -4797506818881968223
+      basic tileset template_38: 4255518996940547654
+      basic tileset template_30: -4331108123661411387
+      basic tileset template_2: -593903629226851720
+      basic tileset template_17: -4333420991617477527
+      basic tileset template_48: -6357016313099895085
+      basic tileset template_49: -5039156419738684956
+      basic tileset template_41: -8137002342191024039
+      basic tileset template_4: 6787036883796351607
+      basic tileset template_7: -8398807360252311169
+      basic tileset template_14: -7422436861053660356
+      basic tileset template_42: -6638369526218281737
+      basic tileset template_33: -271094738246027210
+      basic tileset template_29: -628982366560815012
+      basic tileset template_34: -3124119988456261553
+      basic tileset template_46: -6273264713182802296
+      basic tileset template_45: 2212228511067922284
+      basic tileset template_24: -2771338364822185763
+      basic tileset template_9: 1087153312779507872
+      basic tileset template_16: 2189847644645530837
+      basic tileset template_28: -750303622892676383
+      basic tileset template_21: -8026114763109830721
+      basic tileset template_1: 239362379104785284
+      basic tileset template_0: -2164302328229930428
+      basic tileset template_8: 814802726437515083
+      basic tileset template_11: -6245232552281403339
+      basic tileset template_26: 3083447895712024546
+      basic tileset template_22: 4960943777037067485
+      basic tileset template_35: 1388329998082294675
+      basic tileset template_52: -4767890332754282573
+      basic tileset template_13: -1283373102110712979
+      basic tileset template_15: 4941291362852631687
+      basic tileset template_3: 1911402059284195415
+      basic tileset template_31: 3286061457222272059
+      basic tileset template_10: -4459753778225652788
+      basic tileset template_36: -8529316807094127553
+      basic tileset template_40: -935133623665789604
+      basic tileset template_32: -1332928979734049826
+      basic tileset template_5: 3508772699903784559
+      basic tileset template_54: 971088130605648320
+      basic tileset template_12: -1347326304472876259
+      basic tileset template_37: 2322387022886687547
+      basic tileset template_47: -1541925626959168727
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

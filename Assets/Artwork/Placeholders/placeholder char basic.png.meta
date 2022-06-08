@@ -192,6 +192,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -1216,6 +1217,51 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      placeholder char basic_42: -8888035618198345096
+      placeholder char basic_37: -7187219327881715939
+      placeholder char basic_7: -6268547486552465833
+      placeholder char basic_20: 7507111205537830319
+      placeholder char basic_18: -1576446529972622768
+      placeholder char basic_24: -4904094286535482381
+      placeholder char basic_27: 1906766074113908548
+      placeholder char basic_25: -7357692228416854019
+      placeholder char basic_5: 9223162979650744906
+      placeholder char basic_4: -8364065121562167843
+      placeholder char basic_26: 6284832585860648131
+      placeholder char basic_34: 8401970963687317467
+      placeholder char basic_40: -2123574411777155547
+      placeholder char basic_9: -2504477553340692982
+      placeholder char basic_2: -346237614697802515
+      placeholder char basic_14: 2407215005036358177
+      placeholder char basic_32: 368217943131266192
+      placeholder char basic_16: -3858669939361787343
+      placeholder char basic_35: 237079635128882364
+      placeholder char basic_13: -3225578983671093304
+      placeholder char basic_1: -4883792349686931814
+      placeholder char basic_21: -4036179433573715263
+      placeholder char basic_28: -5762398384748682872
+      placeholder char basic_33: 9151151341782860347
+      placeholder char basic_11: 7314269668353907874
+      placeholder char basic_39: -2611012382486916372
+      placeholder char basic_41: -2196158205021979398
+      placeholder char basic_10: 6292793872435273024
+      placeholder char basic_0: -1448014398337702028
+      placeholder char basic_17: -904038925009170333
+      placeholder char basic_3: -886097345924574123
+      placeholder char basic_29: -3734733713017528271
+      placeholder char basic_30: 8508019784307934221
+      placeholder char basic_15: -2046879608197227126
+      placeholder char basic_38: -9039085092414639631
+      placeholder char basic_31: 656466646201946597
+      placeholder char basic_19: 7926754351414064558
+      placeholder char basic_6: -6707651840289859591
+      placeholder char basic_23: -1160069722910590081
+      placeholder char basic_8: -7471530241201622772
+      placeholder char basic_36: 2904017134244736795
+      placeholder char basic_22: 7808340749296515059
+      placeholder char basic_12: 7929167294527219440
+      placeholder char basic_43: 2086363305949655532
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

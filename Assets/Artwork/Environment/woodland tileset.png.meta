@@ -204,6 +204,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -1552,6 +1553,67 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      woodland tileset_8: -478591391921629180
+      woodland tileset_37: -6343150777893730191
+      woodland tileset_10: -1630458236117878181
+      woodland tileset_0: -5589837619922314876
+      woodland tileset_35: 9105290683063943161
+      woodland tileset_13: 1356759163887696526
+      woodland tileset_34: 3143030375389150086
+      woodland tileset_55: -1735242655698955890
+      woodland tileset_33: 7928980098922628586
+      woodland tileset_11: 8514273430819111710
+      woodland tileset_29: -5510020265027313511
+      woodland tileset_48: -5279060688289732762
+      woodland tileset_57: -5134095738453474623
+      woodland tileset_24: -4912740286282144661
+      woodland tileset_59: 2666450004437933680
+      woodland tileset_44: -1372985096756723518
+      woodland tileset_23: -5383846148185257968
+      woodland tileset_15: -2192991388689557250
+      woodland tileset_17: 1126903882881962718
+      woodland tileset_28: 6832721461798969649
+      woodland tileset_51: 1803060647799230515
+      woodland tileset_41: -8147140424922072347
+      woodland tileset_40: -935759058449967694
+      woodland tileset_3: -5573183792215019351
+      woodland tileset_7: -2699171836911666413
+      woodland tileset_20: -2452696331953886925
+      woodland tileset_25: 7147003064250330771
+      woodland tileset_50: 2845761546285898203
+      woodland tileset_45: 4619029194554445386
+      woodland tileset_43: 5589508286225140301
+      woodland tileset_49: -8824979551099919722
+      woodland tileset_1: -2796072742236419538
+      woodland tileset_52: 1681329601569527973
+      woodland tileset_54: -2682906514404400654
+      woodland tileset_6: 5997118930143898402
+      woodland tileset_31: 3581730876620657345
+      woodland tileset_19: -3632869995743323630
+      woodland tileset_22: -7534185463469009715
+      woodland tileset_56: 7310333139215450757
+      woodland tileset_2: -7247742472631889795
+      woodland tileset_46: 5633437072650900409
+      woodland tileset_27: -8104810419795589284
+      woodland tileset_58: -5849775637683986828
+      woodland tileset_53: -6498519955042247121
+      woodland tileset_47: 4379422046263533499
+      woodland tileset_4: 8001467950877311932
+      woodland tileset_5: -899359531458076735
+      woodland tileset_32: -2855702939499868192
+      woodland tileset_21: -7820046843521594733
+      woodland tileset_38: 4354558996938189416
+      woodland tileset_18: -6863720806357219158
+      woodland tileset_26: -968352826608281622
+      woodland tileset_16: -4402061193485817915
+      woodland tileset_14: -8824476618898976051
+      woodland tileset_30: -5477560031768505714
+      woodland tileset_36: -9005508523546897604
+      woodland tileset_39: 7645296943387546515
+      woodland tileset_9: 8403352162959135335
+      woodland tileset_12: -5164682642115818923
+      woodland tileset_42: -9122612850073603840
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
