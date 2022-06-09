@@ -41,12 +41,12 @@
      <Compile Include="Assets\Scripts\Character\Player\PlayerAnimationHandler.cs" />
      <Compile Include="Assets\Scripts\Portals\PortalHandler.cs" />
      <Compile Include="Assets\Scripts\Character\Player\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\Character\NPC.cs" />
      <Compile Include="Assets\Scripts\Character\Enemy\EnemyController.cs" />
      <Compile Include="Assets\Scripts\DebugStuffs\PlaceholderAsset.cs" />
      <Compile Include="Assets\Scripts\Portals\Portal.cs" />
-     <Compile Include="Assets\Scripts\Character\Character.cs" />
-     <Compile Include="Assets\Scripts\Character\NPC.cs" />
      <Compile Include="Assets\Scripts\Character\CommonBehaviour.cs" />
+     <Compile Include="Assets\Scripts\Character\Character.cs" />
      <None Include="Assets\Artwork\Placeholders\Modern_Interiors_Free_v2.2\Modern tiles_Free\READ ME.txt" />
      <None Include="Assets\Artwork\Placeholders\Modern_Interiors_Free_v2.2\Modern tiles_Free\LICENSE.txt" />
     <Reference Include="UnityEngine">
