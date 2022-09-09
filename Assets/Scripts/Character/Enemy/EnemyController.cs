@@ -16,16 +16,16 @@ public class EnemyController : MonoBehaviour
     // keep it simple for now
     // we have basic random movement now
 
-    EnemyState enemyState = EnemyState.Idling;
+    // EnemyState enemyState = EnemyState.Idling;
     [SerializeField] GameObject player;
     [SerializeField] Vector3 randomDirection;
     [SerializeField] float speed;
     [SerializeField] float timeToWander = Mathf.Infinity;
     [SerializeField] float wanderRadius = 5f;
     [SerializeField] float attackRadius = 1f;
-    [SerializeField] float attackTimer = Mathf.Infinity;
+    // [SerializeField] float attackTimer = Mathf.Infinity;
     float timeWandering = 0;
-    float attackTime = 0;
+    // float attackTime = 0;
     Vector3 startPos;
     Rigidbody2D rb;
     

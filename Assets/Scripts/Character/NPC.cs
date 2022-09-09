@@ -41,7 +41,6 @@ namespace CharacterModel {
             if (CheckInRange() && Input.GetKeyDown(KeyCode.Space))
             {
                 StartDialogue();
-                // freeze the game so the player can't take damage
             }
         }
 

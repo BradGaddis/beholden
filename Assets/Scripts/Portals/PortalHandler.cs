@@ -7,26 +7,44 @@ public class PortalHandler : MonoBehaviour
     // the sibling portal location
     Vector2 otherPortalLoc = Vector2.zero;
 
+    // are we in another portal?
+    bool isInPortal = false;
+    int randPortalNum;
+    string siblingName;
+
     private void OnTriggerEnter2D(Collider2D other) {
-        // the tag of the other portal
-        string siblingName = other.gameObject.tag == "Portal 1" ? "Portal 2" : "Portal 1";
-
-        // find the portal system that we are standing in now 
-        Transform parentSystem = other.gameObject.transform.parent;
-
-        // figure out which pair is the sibling
-        foreach (Transform child in parentSystem)
+        PortalSystem PortalSystem = other.gameObject.transform.parent.GetComponent<PortalSystem>();
+        if(PortalSystem)
         {
-            if(child.gameObject.tag == siblingName)
+            Transform parentSystem = other.gameObject.transform.parent;
+            int childCount = parentSystem.childCount;
+
+            do {
+                randPortalNum = Random.Range(1, childCount + 1);
+                siblingName = $"Portal {randPortalNum}";
+            } while(other.gameObject.tag == siblingName);
+
+            // find where the sibling portal is located
+            foreach (Transform child in parentSystem)
             {
-                otherPortalLoc = child.transform.position;
+                if(child.gameObject.tag == siblingName)
+                {
+                    isInPortal = true;
+                    otherPortalLoc = child.transform.position;
+                }
             }
         }
     }
 
-    private void OnTriggerStay2D(Collider2D other) {
-        // move to the other locaton when you press the correct key
-        if(Input.GetKeyDown(KeyCode.Space))
+    private void OnTriggerExit2D(Collider2D other) {
+        if(isInPortal && other.gameObject.tag == siblingName)
+        {
+            isInPortal = false;
+        }
+    }
+
+    private void Update() {
+         if(Input.GetKeyDown(KeyCode.Space) && isInPortal)
         {
             transform.position = otherPortalLoc;
         }

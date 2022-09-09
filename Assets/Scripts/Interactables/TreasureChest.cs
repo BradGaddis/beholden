@@ -41,4 +41,9 @@ public class TreasureChest : MonoBehaviour, IInteractable
             chestIsOpen = false;
         }
     }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        // whenever it wants to
+    }
 }

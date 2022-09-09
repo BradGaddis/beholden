@@ -25,7 +25,7 @@ namespace Player
         [SerializeField] float dashForce = 5f;
         [SerializeField]AudioClip dashWoosh;
         bool dashLocked = true;
-        bool canTeleport = false; 
+        // bool canTeleport = false; 
         float dashTimer;
         Vector3 lockDashDir;
         Vector3 currentDirection;
